@@ -26,4 +26,4 @@ if(int.TryParse(cadena, out num)){ //para pasar de string a entero
         Console.WriteLine($"El numero invertido es: {numInvertido}" ); 
     }
 }
-int c; 
+
