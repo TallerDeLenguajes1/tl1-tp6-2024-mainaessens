@@ -32,27 +32,27 @@ int opcion;
 string cadena, cadena1;
 float numero; 
 
-
-
-do {
-    Console.WriteLine("---CALCULADORA---");
-    Console.WriteLine("1: VALOR ABSOLUTO");
-    Console.WriteLine("2: CUADRADO");
-    Console.WriteLine("3: RAIZ CUADRADA");
-    Console.WriteLine("4: SENO");
-    Console.WriteLine("5: COSENO");
-    Console.WriteLine("6: PARTE");
-    Console.WriteLine("OTRO: SALIR\n");
-    Console.WriteLine("\nINGRESE OPCION: ");
-    cadena = Console.ReadLine(); 
-    int.TryParse(cadena, out opcion); 
-
     do{
 
         Console.WriteLine("\nINGRESE NUMERO: ");
         cadena1 = Console.ReadLine(); 
 
     } while(!float.TryParse(cadena1, out numero)); 
+
+
+do {
+    Console.WriteLine("\n---CALCULADORA---");
+    Console.WriteLine("1: VALOR ABSOLUTO");
+    Console.WriteLine("2: CUADRADO");
+    Console.WriteLine("3: RAIZ CUADRADA");
+    Console.WriteLine("4: SENO");
+    Console.WriteLine("5: COSENO");
+    Console.WriteLine("6: PARTE ENTERA");
+    Console.WriteLine("OTRO: SALIR\n");
+    Console.WriteLine("\nINGRESE OPCION: ");
+    cadena = Console.ReadLine(); 
+    int.TryParse(cadena, out opcion); 
+
 
     switch (opcion){
     case 1: 
